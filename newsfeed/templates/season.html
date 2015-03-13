@@ -1,0 +1,231 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>ESE Movie Club</title>
+    <meta name="description" content="Flat Design Mini Portfolio">
+    <meta name="keywords" content="responsive, bootstrap, flat design, flat ui, portfolio">
+    <meta name="author" content="Dzyngiri">
+    <meta name="description" content="This is a responsive flat design mini portfolio for creative folks who want to showcase their work online.">
+    <!-- styles -->
+    <link href="/static/profile_page/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/profile_page/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/profile_page/css/style.css" rel="stylesheet">
+    <link href="/static/profile_page/font/css/fontello.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    
+    </head>
+    <body>
+    
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+        <a class="brand"><img src="/static/profile_page/img/movie_icon.png"/></a>
+          <ul class="nav nav-collapse pull-right">
+            <li><a href="/profile/"><i class="icon-user"></i> Profile</a></li>
+            <li><a href="/friends/"><i class="icon-trophy"></i> Friends</a></li>
+            <li><a href="/kicks_list/"><i class="icon-picture"></i> Kicks</a></li>
+            <li><a href="/season/" class="active"><i class="icon-doc-text"></i>Season</a></li>
+          </ul>
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+          </div>
+        </div>
+      </div>
+    </div>
+        {% for user in users %}
+          {% if user.userName == request.session.currentUser %}
+    <!--Profile container-->
+    <div class="container profile">
+      <div class="customSpan">
+        <h1>Season 3</h1>  
+      <table class="flat-table">
+  <tbody>
+    <tr>
+      <th class="flat_table_th">Members</th>
+      <th class="flat_table_th">Month/Year</th>
+      <th class="flat_table_th">Locks</th>
+      
+    </tr>
+    <tr>
+      <td class="flat_table_td">Chris</td>
+      <td class="flat_table_td">July 2014</td>
+      <td class="flat_table_td"></td>
+     
+    </tr>
+    <tr>
+      <td class="flat_table_td">Prakash</td>
+      <td class="flat_table_td">August 2014</td>
+      <td class="flat_table_td"></td>
+     
+    </tr>
+    <tr>
+      <td class="flat_table_td">Carlos</td>
+      <td class="flat_table_td">September 2014</td>
+      <td class="flat_table_td"></td>
+     
+    </tr>
+    <tr>
+      <td class="flat_table_td">Saksham</td>
+      <td class="flat_table_td">october 2014</td>
+      <td class="flat_table_td"></td>
+     
+    </tr>
+    <tr>
+      <td class="flat_table_td">Omar</td>
+      <td class="flat_table_td">November 2014</td>
+      <td class="flat_table_td"></td>
+
+    </tr>
+    <tr>
+      <td class="flat_table_td">Nick</td>
+      <td class="flat_table_td">December 2014</td>
+      <td class="flat_table_td">iOrigin</td>
+
+    </tr>
+      <tr>
+      <td class="flat_table_td">Girish</td>
+      <td class="flat_table_td">January 2015</td>
+      <td class="flat_table_td"></td>
+      
+    </tr>
+    <tr>
+      <td class="flat_table_td">Marissa</td>
+      <td class="flat_table_td">February 2015</td>
+      <td class="flat_table_td"></td>
+      
+    </tr>
+    <tr>
+      <td class="flat_table_td">Chris</td>
+      <td class="flat_table_td">March 2015</td>
+      <td class="flat_table_td"></td>
+      
+    </tr>
+    <tr>
+      <td class="flat_table_td">Prakash</td>
+      <td class="flat_table_td">April 2015</td>
+      <td class="flat_table_td"></td>
+      
+    </tr>
+    <tr>
+      <td class="flat_table_td">Carlos</td>
+      <td class="flat_table_td">May 2015</td>
+      <td class="flat_table_td"></td>
+      
+    </tr>
+    <tr>
+      <td class="flat_table_td">Girish</td>
+      <td class="flat_table_td">June 2015</td>
+      <td class="flat_table_td"></td>
+      
+    </tr>
+    <tr>
+      <td class="flat_table_td">Saksham</td>
+      <td class="flat_table_td">July 2015</td>
+      <td class="flat_table_td"></td>
+      
+    </tr>
+    <tr>
+      <td class="flat_table_td">Omar</td>
+      <td class="flat_table_td">August 2015</td>
+      <td class="flat_table_td"></td>
+      
+    </tr>
+    <tr>
+      <td class="flat_table_td">Nick</td>
+      <td class="flat_table_td">September 2015</td>
+      <td class="flat_table_td"></td>
+      
+    </tr>
+    <tr>
+      <td class="flat_table_td">Marissa</td>
+      <td class="flat_table_td">October 2015</td>
+      <td class="flat_table_td"></td>
+      
+    </tr>
+    </tr>
+  </tbody>
+</table>
+				</div>
+     
+				<!-- {% with firstName=user.firstName %} {{ firstName }}    {% endwith %}  	-->
+        	
+        <p></p>
+       
+       <!-- <a href="#" class="hire-me"><i class="icon-paper-plane"></i> Recommend a kick </a> </div> -->
+    </div>
+    </div>
+    <!--END: Profile container-->
+    <!-- Social Icons -->
+    <div class="row social">
+      <ul class="social-icons">
+        <li><a href="#" target="_blank"><img src="/static/profile_page/img/fb.png" alt="facebook"></a></li>
+        <li><a href="#" target="_blank"><img src="/static/profile_page/img/tw.png" alt="twitter"></a></li>
+        <li><a href="#" target="_blank"><img src="/static/profile_page/img/go.png" alt="google plus"></a></li>
+        <li><a href="#" target="_blank"><img src="/static/profile_page/img/pin.png" alt="pinterest"></a></li>
+        <li><a href="#" target="_blank"><img src="/static/profile_page/img/st.png" alt="stumbleupon"></a></li>
+        <li><a href="#" target="_blank"><img src="/static/profile_page/img/dr.png" alt="dribbble"></a></li>
+      </ul>
+    </div>
+    <!-- END: Social Icons -->
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <p class="pull-left"><a href="#">www.laaugh.com/kick</a></p>
+        <p class="pull-right"><a href="#myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> EDIT PROFILE </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logged in as: <font color="#39d084">{{ request.session.currentUser }}</font></p>
+      </div>
+    </div>
+    <!-- Contact form in Modal -->
+    <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel"><i class="icon-mail"></i> Edit Profile</h3>
+      </div>
+      <div class="modal-body">
+        <form action="/edit_profile_form/" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+        
+          <label> first name </label><input type="text" placeholder="{{ user.firstName }}" name="firstName" value="{{ user.firstName }}">
+          <label> last name </label><input type="text" placeholder="{{ user.lastName }}" name="lastName" value="{{ user.lastName }}">
+          <label> email </label><input type="text" placeholder="{{ user.email }}" name="email" value="{{ user.email }}">
+          <label> expertise </label><input type="text" placeholder="{{ user.expertise }}" name="expertise" value="{{ user.expertise }}">
+          <label> genres </label><input type="text" placeholder="{{ user.genres }}" name="genres" value="{{ user.genres }}">
+          <label> ratings </label><input type="text" placeholder="{{ user.ratings }}" name="ratings" value="{{ user.ratings }}">
+          <label> top 100 </label><input type="text" placeholder="{{ user.top100 }}" name="top100" value="{{ user.top100 }}">
+          <label> watchlist </label><input type="text" placeholder="{{ user.watchlist }}" name="watchlist" value="{{ user.watchlist }}">
+          <!-- <label> update profile picture </label><input type="file" name="thumbnail" id="thumbnail"> -->
+          <label> update profile picture </label><input id="uploadFile" placeholder="Choose File" disabled="disabled" />
+          <div class="fileUpload btn btn-primary">
+          <span>Browse...</span>
+          <input id="uploadBtn" type="file" class="upload" name="thumbnail"/>
+          </div>
+
+
+
+          <input type="hidden" name="currentUser" value ={{ user.userName }}>
+          
+          <textarea rows="3" style="width:80%"></textarea>
+          <br/>
+          
+          {% endif %}
+        {% endfor %}
+        
+          <button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> SUBMIT</button>
+        </form>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/static/profile_page/js/bootstrap.min.js"></script>
+    <script>
+                $('#myModal').modal('hidden')
+        </script>
+        <SCRIPT type="text/javascript">
+      document.getElementById("uploadBtn").onchange = function () {
+      document.getElementById("uploadFile").value = this.value;
+      };
+    </SCRIPT>
+    </body>
+    </html>
